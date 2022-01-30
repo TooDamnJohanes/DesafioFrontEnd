@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Desafio FrontEnd</title>
+</head>
+
+<body onload="produtosCliente()">
+
+    <header>
+        <p class="logo">Desafio FrontEnd</p>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="cadastro_produtos.html">Cadastrar Produtos</a></li>
+                <li><a href="peril.html">Ver Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-container-produtos">
+        <h1>Altere ou delete um Item</h1>
+    </div>
+    <div class="full-box">
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>_Id</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="produto-id">Nome</label>
+                        <input type="text" name="produto-id" id="produto-id" placeholder="Digite o id do produto" data-require data-max-length="24">
+                    </td>
+                    <td>
+                        <input type="submit" id="btn-select" value="Select">
+                    </td>
+                    <td>
+                        <input type="submit" id="btn-delete" value="Delete">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="main-container-produtos">
+        <h1>Produtos-Selecionados</h1>
+    </div>
+    <div class="full-box">
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>_Id</th>
+                    <th>Quantity</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody data-js="itens-tabela-produtos-selecionados">
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    <div id="main-container-produtos">
+        <h1>Produtos</h1>
+    </div>
+    <div class="full-box">
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>_Id</th>
+                    <th>Quantity</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody data-js="itens-tabela">
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="js/produtos.js"></script>
+</body>
+
+</html>

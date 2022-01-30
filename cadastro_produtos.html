@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Desafio FrontEnd</title>
+</head>
+
+<body>
+    <div id="main-container">
+        <h1>Informações do Produto</h1>
+        <form id="register-form">
+            <div class="full-box">
+                <label for="name-produto">Nome do produto</label>
+                <input type="text" name="name-produto" id="name-produto" placeholder="Digite seu nome" data-require data-max-length="24">
+            </div>
+
+            <div class="half-box spacing">
+                <label for="quantity-produtos">Quantity</label>
+                <input type="number" name="quantity-produtos" id="quantity-produtos" placeholder="Digite a quantidade em estoque" data-require>
+            </div>
+
+            <div class="half-box">
+                <label for="preco">Preço</label>
+                <input type="number" name="preco" id="preco" placeholder="Digite o preço do produto" data-require>
+            </div>
+
+            <div class="full-box">
+                <input type="submit" id="btn-submit-produtos" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
