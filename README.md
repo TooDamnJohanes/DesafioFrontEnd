@@ -5,7 +5,7 @@
 ### O site, utiliza de dois EndPoints, que são:
 
 + Cliente;
-+ Produto;
++ Produtos;
 
 ### Na tabela de clientes, temos os campos:
 
